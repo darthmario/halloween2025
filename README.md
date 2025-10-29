@@ -41,4 +41,4 @@ Please check individual asset licenses before use.
 
 ## Acknowledgments
 
-Thank you to Evan McMahon for creating this Halloween animation! This project works great with [Bottango's servo shields](https://www.bottango.com/store) for controlling animatronics.
+Thank you to Evan McMahon for creating the Bottango software! This project works great with [Bottango's servo shields](https://www.bottango.com/store) for controlling animatronics.
