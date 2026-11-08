@@ -1,0 +1,226 @@
+id: "650"
+name: Vincent Price Monster Mash
+fps: 30
+durationFrames: 71280
+loop: false
+tracks:
+  - id: "652"
+    kind: media
+    name: Vincent Price - Monster Mash (HQ)
+    targetId: "607"
+    keyframes:
+      - frame: 0
+        lengthMs: 201567
+  - id: "656"
+    kind: media
+    name: The Creepy Crawl Danny Go Kids Halloween Trick or Treat Music
+    targetId: "633"
+    keyframes:
+      - frame: 5968
+        lengthMs: 165465
+  - id: "660"
+    kind: media
+    name: Andrew Gold Spooky Scary Skeletons Undead Tombstone Remix Official Lyric Video
+    targetId: "611"
+    keyframes:
+      - frame: 10847
+        lengthMs: 125898
+  - id: "664"
+    kind: media
+    name: The Lurch
+    targetId: "639"
+    keyframes:
+      - frame: 14492
+        lengthMs: 133733
+  - id: "668"
+    kind: media
+    name: Thriller
+    targetId: "643"
+    keyframes:
+      - frame: 18327
+        lengthMs: 357481
+  - id: "672"
+    kind: media
+    name: The Skeleton Shake- 💀🎩 Halloween Dance Danny Go- Songs for Kids
+    targetId: "641"
+    keyframes:
+      - frame: 28964
+        lengthMs: 216990
+  - id: "676"
+    kind: media
+    name: Bobby Boris Pickett Monster Rap Radio Edit Official Lyric Video
+    targetId: "613"
+    keyframes:
+      - frame: 35380
+        lengthMs: 210117
+  - id: "680"
+    kind: media
+    name: grim-grinning-ghosts
+    targetId: "647"
+    keyframes:
+      - frame: 41360
+        lengthMs: 333793
+  - id: "684"
+    kind: media
+    name: Electro Swing Remix Grim Grinning Swingin Ghosts
+    targetId: "619"
+    keyframes:
+      - frame: 51277
+        lengthMs: 153507
+  - id: "688"
+    kind: media
+    name: The Little Old Lady From Transylvania
+    targetId: "637"
+    keyframes:
+      - frame: 55714
+        lengthMs: 123911
+  - id: "692"
+    kind: media
+    name: Ray Parker Jr.Ghostbusters Official Video
+    targetId: "623"
+    keyframes:
+      - frame: 59299
+        lengthMs: 244900
+  - id: "696"
+    kind: media
+    name: Happy Halloween Music Video 🎃 OFFICIAL🎃 DBone and The Remains
+    targetId: "621"
+    keyframes:
+      - frame: 66406
+        lengthMs: 163677
+  - id: "700"
+    kind: movement
+    name: Joint
+    targetId: "44"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/joint.kf
+  - id: "33468"
+    kind: movement
+    name: Pose Blend/0
+    targetId: "61"
+    dimension: 0
+    parentTrackId: "33466"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/pose-blend-0.kf
+  - id: "58467"
+    kind: movement
+    name: Pose Blend/1
+    targetId: "61"
+    dimension: 1
+    parentTrackId: "33466"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/pose-blend-1.kf
+  - id: "82052"
+    kind: movement
+    name: right shoulder
+    targetId: "158"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/right-shoulder.kf
+  - id: "86447"
+    kind: movement
+    name: right elbow
+    targetId: "172"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/right-elbow.kf
+  - id: "106658"
+    kind: movement
+    name: gs1h
+    targetId: "237"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/gs1h.kf
+  - id: "121328"
+    kind: movement
+    name: gs1j
+    targetId: "229"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/gs1j.kf
+  - id: "135896"
+    kind: movement
+    name: gs2h
+    targetId: "302"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/gs2h.kf
+  - id: "150185"
+    kind: movement
+    name: gs2j
+    targetId: "294"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/gs2j.kf
+  - id: "164258"
+    kind: movement
+    name: bh1h
+    targetId: "367"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/bh1h.kf
+  - id: "169508"
+    kind: movement
+    name: bh1j
+    targetId: "362"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/bh1j.kf
+  - id: "178640"
+    kind: movement
+    name: bh2h
+    targetId: "408"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/bh2h.kf
+  - id: "183668"
+    kind: movement
+    name: bh2j
+    targetId: "403"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/bh2j.kf
+  - id: "192488"
+    kind: movement
+    name: uvSideA
+    targetId: "591"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/uvsidea.kf
+  - id: "198941"
+    kind: movement
+    name: uvSideB
+    targetId: "595"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/uvsideb.kf
+  - id: "205382"
+    kind: movement
+    name: uvToxic
+    targetId: "603"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/uvtoxic.kf
+  - id: "205388"
+    kind: movement
+    name: uvMain
+    targetId: "599"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/uvmain.kf
+  - id: "210694"
+    kind: movement
+    name: fogRGB/0
+    targetId: "587"
+    dimension: 0
+    parentTrackId: "210692"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/fogrgb-0.kf
+  - id: "210697"
+    kind: movement
+    name: fogRGB/1
+    targetId: "587"
+    dimension: 1
+    parentTrackId: "210692"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/fogrgb-1.kf
+  - id: "210700"
+    kind: movement
+    name: fogRGB/2
+    targetId: "587"
+    dimension: 2
+    parentTrackId: "210692"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/fogrgb-2.kf
+  - id: "210705"
+    kind: movement
+    name: fog
+    targetId: "583"
+    handle: AutoSmooth
+    file: tracks/vincent-price-monster-mash/fog.kf

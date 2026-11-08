@@ -1,0 +1,1067 @@
+# Showcall show (format 1). Scenes are in scenes/, movement tracks in tracks/ (one keyframe per line).
+showcall: 1
+source:
+  format: btngo
+  bottangoVersion: 0.8.0d1
+  saveVersion: "14"
+scenes:
+  - scenes/vincent-price-monster-mash.yaml
+controllers:
+  - id: "211467"
+    name: Hero
+    communicationType: Serial
+    port: /dev/tty.usbmodem11301
+    baudRate: 115200
+    effectorIds:
+      - "41"
+      - "49"
+      - "55"
+      - "160"
+      - "174"
+  - id: "211473"
+    name: Big Heads
+    communicationType: Serial
+    port: /dev/tty.usbmodem11401
+    baudRate: 115200
+    effectorIds:
+      - "359"
+      - "369"
+      - "400"
+      - "410"
+  - id: "211479"
+    name: Green skeletons
+    communicationType: Serial
+    port: /dev/tty.usbmodem11201
+    baudRate: 115200
+    effectorIds:
+      - "226"
+      - "239"
+      - "291"
+      - "304"
+  - id: "211485"
+    name: DMX
+    communicationType: Serial
+    port: /dev/tty.usbmodem5C382000911
+    baudRate: 115200
+    uid: 2A4E383D67DC0EC2
+    effectorIds:
+      - "583"
+      - "587"
+      - "591"
+      - "595"
+      - "599"
+      - "603"
+effectors:
+  - id: "41"
+    name: HJ
+    kind: servo
+    controllerId: "211467"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1082
+    hardware:
+      Pin: 2
+      MinPwm: 745
+      MaxPwm: 1271
+      MaxSpeed: 3000
+  - id: "49"
+    name: HHL
+    kind: servo
+    controllerId: "211467"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1505
+    hardware:
+      Pin: 3
+      MinPwm: 834
+      MaxPwm: 2111
+      MaxSpeed: 3000
+  - id: "55"
+    name: HHR
+    kind: servo
+    controllerId: "211467"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1500
+    hardware:
+      Pin: 4
+      MinPwm: 955
+      MaxPwm: 2242
+      MaxSpeed: 3000
+  - id: "160"
+    name: HHS
+    kind: servo
+    controllerId: "211467"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1963
+    hardware:
+      Pin: 5
+      MinPwm: 1616
+      MaxPwm: 2310
+      MaxSpeed: 3000
+  - id: "174"
+    name: HHE
+    kind: servo
+    controllerId: "211467"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1400
+    hardware:
+      Pin: 6
+      MinPwm: 448
+      MaxPwm: 2413
+      MaxSpeed: 3000
+  - id: "226"
+    name: GS1J
+    kind: servo
+    controllerId: "211479"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1800
+    hardware:
+      Pin: 2
+      MinPwm: 1500
+      MaxPwm: 2100
+      MaxSpeed: 3000
+  - id: "239"
+    name: GS1H
+    kind: servo
+    controllerId: "211479"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1500
+    hardware:
+      Pin: 3
+      MinPwm: 460
+      MaxPwm: 2359
+      MaxSpeed: 3000
+  - id: "291"
+    name: GS2J
+    kind: servo
+    controllerId: "211479"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1273
+    hardware:
+      Pin: 4
+      MinPwm: 1148
+      MaxPwm: 1398
+      MaxSpeed: 3000
+  - id: "304"
+    name: GS2H
+    kind: servo
+    controllerId: "211479"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1738
+    hardware:
+      Pin: 5
+      MinPwm: 1000
+      MaxPwm: 2476
+      MaxSpeed: 3000
+  - id: "359"
+    name: BH1J
+    kind: servo
+    controllerId: "211473"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1099
+    hardware:
+      Pin: 2
+      MinPwm: 1893
+      MaxPwm: 601
+      MaxSpeed: 3000
+  - id: "369"
+    name: BH1H
+    kind: servo
+    controllerId: "211473"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1500
+    hardware:
+      Pin: 3
+      MinPwm: 500
+      MaxPwm: 2500
+      MaxSpeed: 3000
+  - id: "400"
+    name: BH2J
+    kind: servo
+    controllerId: "211473"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1365
+    hardware:
+      Pin: 4
+      MinPwm: 1987
+      MaxPwm: 743
+      MaxSpeed: 3000
+  - id: "410"
+    name: BH2H
+    kind: servo
+    controllerId: "211473"
+    servo:
+      hornRange: 180
+      hornOffset: 0
+      hornClockwise: false
+      homePwm: 1000
+    hardware:
+      Pin: 5
+      MinPwm: 0
+      MaxPwm: 2000
+      MaxSpeed: 3000
+  - id: "583"
+    name: fog
+    kind: event
+    controllerId: "211485"
+    event:
+      type: curved
+      identifier: fog
+      home: 0
+      maxSpeed: 1
+  - id: "587"
+    name: fogRGB
+    kind: event
+    controllerId: "211485"
+    event:
+      type: color
+      identifier: fogRGB
+      home:
+        r: 1
+        g: 1
+        b: 1
+  - id: "591"
+    name: uvSideA
+    kind: event
+    controllerId: "211485"
+    event:
+      type: curved
+      identifier: uvSideA
+      home: 0
+      maxSpeed: 1
+  - id: "595"
+    name: uvSideB
+    kind: event
+    controllerId: "211485"
+    event:
+      type: curved
+      identifier: uvSideB
+      home: 0
+      maxSpeed: 1
+  - id: "599"
+    name: uvMain
+    kind: event
+    controllerId: "211485"
+    event:
+      type: curved
+      identifier: uvMain
+      home: 0
+      maxSpeed: 1
+  - id: "603"
+    name: uvToxic
+    kind: event
+    controllerId: "211485"
+    event:
+      type: curved
+      identifier: uvToxic
+      home: 0
+      maxSpeed: 1
+  - id: "607"
+    name: Vincent Price - Monster Mash (HQ)
+    kind: audio
+  - id: "609"
+    name: “The Bat Wing BEAT ” 🦇 Halloween Drum Along Dance Danny Go Songs for Kids
+    kind: audio
+  - id: "611"
+    name: Andrew Gold Spooky Scary Skeletons Undead Tombstone Remix Official Lyric Video
+    kind: audio
+  - id: "613"
+    name: Bobby Boris Pickett Monster Rap Radio Edit Official Lyric Video
+    kind: audio
+  - id: "615"
+    name: DJ Jazzy Jeff & The Fresh Prince - A Nightmare On My Street (Official Video)
+    kind: audio
+  - id: "617"
+    name: Dracula s Deuce
+    kind: audio
+  - id: "619"
+    name: Electro Swing Remix Grim Grinning Swingin Ghosts
+    kind: audio
+  - id: "621"
+    name: Happy Halloween Music Video 🎃 OFFICIAL🎃 DBone and The Remains
+    kind: audio
+  - id: "623"
+    name: Ray Parker Jr.Ghostbusters Official Video
+    kind: audio
+  - id: "625"
+    name: Riboflavin Flavored Non Carbonated Polyunsaturated Blood
+    kind: audio
+  - id: "627"
+    name: Sheb Wooley The Purple People Eater Official Video
+    kind: audio
+  - id: "629"
+    name: Spooky Spiders Everywhere_ ____ Halloween Adventure Floor is Lava Game Danny Go_ Songs for Kids
+    kind: audio
+  - id: "631"
+    name: The Citizens of Halloween _ This Is Halloween _From Tim Burtons The Nightmare Before Christmas_
+    kind: audio
+  - id: "633"
+    name: The Creepy Crawl Danny Go Kids Halloween Trick or Treat Music
+    kind: audio
+  - id: "635"
+    name: The Crypt Keeper _ The Crypt Jam Tales From the Crypt Official Video
+    kind: audio
+  - id: "637"
+    name: The Little Old Lady From Transylvania
+    kind: audio
+  - id: "639"
+    name: The Lurch
+    kind: audio
+  - id: "641"
+    name: The Skeleton Shake- 💀🎩 Halloween Dance Danny Go- Songs for Kids
+    kind: audio
+  - id: "643"
+    name: Thriller
+    kind: audio
+  - id: "645"
+    name: Your Idol Official Song Clip KPop Demon Hunters Sony Animation
+    kind: audio
+  - id: "647"
+    name: grim-grinning-ghosts
+    kind: audio
+media:
+  - id: "607"
+    identifier: myMedia
+    path: \songs\Vincent Price - Monster Mash (HQ).wav
+  - id: "609"
+    identifier: myMedia
+    path: \songs\“The Bat Wing BEAT ” 🦇 Halloween Drum Along Dance Danny Go Songs for Kids.wav
+  - id: "611"
+    identifier: myMedia
+    path: \songs\Andrew Gold Spooky Scary Skeletons Undead Tombstone Remix Official Lyric Video.wav
+  - id: "613"
+    identifier: myMedia
+    path: \songs\Bobby Boris Pickett Monster Rap Radio Edit Official Lyric Video.wav
+  - id: "615"
+    identifier: myMedia
+    path: \songs\DJ Jazzy Jeff & The Fresh Prince - A Nightmare On My Street (Official Video).wav
+  - id: "617"
+    identifier: myMedia
+    path: \songs\Dracula s Deuce.wav
+  - id: "619"
+    identifier: myMedia
+    path: \songs\Electro Swing Remix Grim Grinning Swingin Ghosts.wav
+  - id: "621"
+    identifier: myMedia
+    path: \songs\Happy Halloween Music Video 🎃 OFFICIAL🎃 DBone and The Remains.wav
+  - id: "623"
+    identifier: myMedia
+    path: \songs\Ray Parker Jr.Ghostbusters Official Video.wav
+  - id: "625"
+    identifier: myMedia
+    path: \songs\Riboflavin Flavored Non Carbonated Polyunsaturated Blood.wav
+  - id: "627"
+    identifier: myMedia
+    path: \songs\Sheb Wooley The Purple People Eater Official Video.wav
+  - id: "629"
+    identifier: myMedia
+    path: \songs\Spooky Spiders Everywhere_ ____ Halloween Adventure Floor is Lava Game Danny Go_ Songs for Kids.wav
+  - id: "631"
+    identifier: myMedia
+    path: \songs\The Citizens of Halloween _ This Is Halloween _From Tim Burtons The Nightmare Before Christmas_.wav
+  - id: "633"
+    identifier: myMedia
+    path: \songs\The Creepy Crawl Danny Go Kids Halloween Trick or Treat Music.wav
+  - id: "635"
+    identifier: myMedia
+    path: \songs\The Crypt Keeper _ The Crypt Jam Tales From the Crypt Official Video.wav
+  - id: "637"
+    identifier: myMedia
+    path: \songs\The Little Old Lady From Transylvania.wav
+  - id: "639"
+    identifier: myMedia
+    path: \songs\The Lurch.wav
+  - id: "641"
+    identifier: myMedia
+    path: \songs\The Skeleton Shake- 💀🎩 Halloween Dance Danny Go- Songs for Kids.wav
+  - id: "643"
+    identifier: myMedia
+    path: \songs\Thriller.wav
+  - id: "645"
+    identifier: myMedia
+    path: \songs\Your Idol Official Song Clip KPop Demon Hunters Sony Animation.wav
+  - id: "647"
+    identifier: myMedia
+    path: /songs/grim-grinning-ghosts.wav
+parts:
+  - id: "32"
+    name: Hero Skeleton
+    type: TonicNorth.Bottango.Articulation.EmptyPoint
+    visible: false
+    children:
+      - id: "35"
+        name: Hero Skeleton
+        type: CustomModel
+        visible: true
+        children:
+          - id: "41"
+            name: HJ
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "41"
+          - id: "49"
+            name: HHL
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "49"
+          - id: "55"
+            name: HHR
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "55"
+          - id: "61"
+            name: Pose Blend
+            type: PoseBlend
+            visible: true
+          - id: "64"
+            name: Upper right
+            type: TargetPose
+            visible: true
+          - id: "81"
+            name: upper left
+            type: TargetPose
+            visible: true
+          - id: "95"
+            name: lower left
+            type: TargetPose
+            visible: true
+          - id: "109"
+            name: lower right
+            type: TargetPose
+            visible: true
+          - id: "132"
+            name: skeleton_upper_spine
+            type: CustomModel
+            visible: true
+            children:
+              - id: "68"
+                name: Neck
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "71"
+                    name: Joint
+                    type: ArticulationJoint
+                    visible: true
+                    children:
+                      - id: "74"
+                        name: Joint
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "144"
+                            name: skull
+                            type: CustomModel
+                            visible: true
+                          - id: "44"
+                            name: Joint
+                            type: ArticulationJoint
+                            visible: true
+                            motorId: "41"
+                            children:
+                              - id: "152"
+                                name: Jaw
+                                type: CustomModel
+                                visible: true
+              - id: "158"
+                name: right shoulder
+                type: ArticulationJoint
+                visible: true
+                motorId: "160"
+                children:
+                  - id: "166"
+                    name: skeleton_right_upper_arm
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "172"
+                        name: right elbow
+                        type: ArticulationJoint
+                        visible: true
+                        motorId: "174"
+                        children:
+                          - id: "180"
+                            name: skeleton_right_lower_arm
+                            type: CustomModel
+                            visible: true
+                            children:
+                              - id: "186"
+                                name: skeleton_right_hand
+                                type: CustomModel
+                                visible: true
+              - id: "192"
+                name: left shoulder
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "195"
+                    name: skeleton_left_upper_arm
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "201"
+                        name: right elbow Copy
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "204"
+                            name: skeleton_left_lower_arm
+                            type: CustomModel
+                            visible: true
+                            children:
+                              - id: "210"
+                                name: skeleton_left_hand
+                                type: CustomModel
+                                visible: true
+          - id: "160"
+            name: HHS
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "160"
+          - id: "174"
+            name: HHE
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "174"
+  - id: "220"
+    name: Green Skeleton
+    type: TonicNorth.Bottango.Articulation.EmptyPoint
+    visible: false
+    children:
+      - id: "223"
+        name: green skeleton
+        type: CustomModel
+        visible: true
+        children:
+          - id: "226"
+            name: GS1J
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "226"
+          - id: "234"
+            name: skeleton_upper_spine
+            type: CustomModel
+            visible: true
+            children:
+              - id: "237"
+                name: gs1h
+                type: ArticulationJoint
+                visible: true
+                motorId: "239"
+                children:
+                  - id: "245"
+                    name: skull
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "229"
+                        name: gs1j
+                        type: ArticulationJoint
+                        visible: true
+                        motorId: "226"
+                        children:
+                          - id: "250"
+                            name: Jaw
+                            type: CustomModel
+                            visible: true
+              - id: "253"
+                name: right shoulder
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "256"
+                    name: skeleton_right_upper_arm
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "259"
+                        name: right elbow
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "262"
+                            name: skeleton_right_lower_arm
+                            type: CustomModel
+                            visible: true
+                            children:
+                              - id: "265"
+                                name: skeleton_right_hand
+                                type: CustomModel
+                                visible: true
+              - id: "268"
+                name: left shoulder
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "271"
+                    name: skeleton_left_upper_arm
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "274"
+                        name: right elbow Copy
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "277"
+                            name: skeleton_left_lower_arm
+                            type: CustomModel
+                            visible: true
+                            children:
+                              - id: "280"
+                                name: skeleton_left_hand
+                                type: CustomModel
+                                visible: true
+          - id: "239"
+            name: GS1H
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "239"
+  - id: "285"
+    name: Green Skeleton 2
+    type: TonicNorth.Bottango.Articulation.EmptyPoint
+    visible: false
+    children:
+      - id: "288"
+        name: green skeleton
+        type: CustomModel
+        visible: true
+        children:
+          - id: "291"
+            name: GS2J
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "291"
+          - id: "299"
+            name: skeleton_upper_spine
+            type: CustomModel
+            visible: true
+            children:
+              - id: "302"
+                name: gs2h
+                type: ArticulationJoint
+                visible: true
+                motorId: "304"
+                children:
+                  - id: "310"
+                    name: skull
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "294"
+                        name: gs2j
+                        type: ArticulationJoint
+                        visible: true
+                        motorId: "291"
+                        children:
+                          - id: "315"
+                            name: Jaw
+                            type: CustomModel
+                            visible: true
+              - id: "318"
+                name: right shoulder
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "321"
+                    name: skeleton_right_upper_arm
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "324"
+                        name: right elbow
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "327"
+                            name: skeleton_right_lower_arm
+                            type: CustomModel
+                            visible: true
+                            children:
+                              - id: "330"
+                                name: skeleton_right_hand
+                                type: CustomModel
+                                visible: true
+              - id: "333"
+                name: left shoulder
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "336"
+                    name: skeleton_left_upper_arm
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "339"
+                        name: right elbow Copy
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "342"
+                            name: skeleton_left_lower_arm
+                            type: CustomModel
+                            visible: true
+                            children:
+                              - id: "345"
+                                name: skeleton_left_hand
+                                type: CustomModel
+                                visible: true
+          - id: "304"
+            name: GS2H
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "304"
+  - id: "350"
+    name: Big Head Skeleton
+    type: TonicNorth.Bottango.Articulation.EmptyPoint
+    visible: false
+    children:
+      - id: "353"
+        name: skeleton2
+        type: CustomModel
+        visible: true
+        children:
+          - id: "359"
+            name: BH1J
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "359"
+          - id: "367"
+            name: bh1h
+            type: ArticulationJoint
+            visible: true
+            motorId: "369"
+            children:
+              - id: "375"
+                name: skull
+                type: CustomModel
+                visible: true
+                children:
+                  - id: "362"
+                    name: bh1j
+                    type: ArticulationJoint
+                    visible: true
+                    motorId: "359"
+                    children:
+                      - id: "383"
+                        name: Jaw
+                        type: CustomModel
+                        visible: true
+          - id: "369"
+            name: BH1H
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "369"
+      - id: "391"
+        name: Cylinder Structure
+        type: TonicNorth.Bottango.Articulation.StructureCylinder
+        visible: true
+  - id: "394"
+    name: Big Head Skeleton 2
+    type: TonicNorth.Bottango.Articulation.EmptyPoint
+    visible: false
+    children:
+      - id: "397"
+        name: skeleton2
+        type: CustomModel
+        visible: true
+        children:
+          - id: "400"
+            name: BH2J
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "400"
+          - id: "408"
+            name: bh2h
+            type: ArticulationJoint
+            visible: true
+            motorId: "410"
+            children:
+              - id: "416"
+                name: skull
+                type: CustomModel
+                visible: true
+                children:
+                  - id: "403"
+                    name: bh2j
+                    type: ArticulationJoint
+                    visible: true
+                    motorId: "400"
+                    children:
+                      - id: "421"
+                        name: Jaw
+                        type: CustomModel
+                        visible: true
+          - id: "410"
+            name: BH2H
+            type: TonicNorth.Bottango.Articulation.Servo
+            visible: true
+            effectorId: "410"
+      - id: "426"
+        name: Cylinder Structure
+        type: TonicNorth.Bottango.Articulation.StructureCylinder
+        visible: true
+  - id: "429"
+    name: Skeleton Legs
+    type: TonicNorth.Bottango.Articulation.EmptyPoint
+    visible: false
+    children:
+      - id: "432"
+        name: skelleton legs
+        type: CustomModel
+        visible: true
+        children:
+          - id: "435"
+            name: skeleton_lower_ribcage
+            type: CustomModel
+            visible: true
+            children:
+              - id: "441"
+                name: right leg
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "444"
+                    name: skeleton_right_uppoer_leg
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "450"
+                        name: Joint Copy
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "453"
+                            name: skeleton_right_lower_leg
+                            type: CustomModel
+                            visible: true
+                            children:
+                              - id: "459"
+                                name: Joint Copy2
+                                type: ArticulationJoint
+                                visible: true
+                                children:
+                                  - id: "462"
+                                    name: skeleton_right_foot
+                                    type: CustomModel
+                                    visible: true
+              - id: "468"
+                name: left leg
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "471"
+                    name: skeleton_left__uppoer_leg
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "477"
+                        name: Joint Copy
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "480"
+                            name: skeleton_left_lower_leg
+                            type: CustomModel
+                            visible: true
+                            children:
+                              - id: "486"
+                                name: Joint Copy2
+                                type: ArticulationJoint
+                                visible: true
+                                children:
+                                  - id: "489"
+                                    name: skeleton_left_foot
+                                    type: CustomModel
+                                    visible: true
+  - id: "495"
+    name: Skeleton Legs No pelvis
+    type: TonicNorth.Bottango.Articulation.EmptyPoint
+    visible: false
+    children:
+      - id: "498"
+        name: right leg
+        type: ArticulationJoint
+        visible: true
+        children:
+          - id: "501"
+            name: skeleton_right_uppoer_leg
+            type: CustomModel
+            visible: true
+            children:
+              - id: "504"
+                name: Joint Copy
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "507"
+                    name: skeleton_right_lower_leg
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "510"
+                        name: Joint Copy2
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "513"
+                            name: skeleton_right_foot
+                            type: CustomModel
+                            visible: true
+      - id: "516"
+        name: left leg
+        type: ArticulationJoint
+        visible: true
+        children:
+          - id: "519"
+            name: skeleton_left__uppoer_leg
+            type: CustomModel
+            visible: true
+            children:
+              - id: "522"
+                name: Joint Copy
+                type: ArticulationJoint
+                visible: true
+                children:
+                  - id: "525"
+                    name: skeleton_left_lower_leg
+                    type: CustomModel
+                    visible: true
+                    children:
+                      - id: "528"
+                        name: Joint Copy2
+                        type: ArticulationJoint
+                        visible: true
+                        children:
+                          - id: "531"
+                            name: skeleton_left_foot
+                            type: CustomModel
+                            visible: true
+  - id: "534"
+    name: Headstone 2
+    type: CustomModel
+    visible: true
+    children:
+      - id: "541"
+        name: Extrude.6
+        type: CustomModel
+        visible: true
+  - id: "547"
+    name: Headstone 2 Copy
+    type: CustomModel
+    visible: true
+    children:
+      - id: "550"
+        name: Extrude.6
+        type: CustomModel
+        visible: true
+  - id: "553"
+    name: Headstone 1
+    type: CustomModel
+    visible: true
+    children:
+      - id: "559"
+        name: Extrude.1
+        type: CustomModel
+        visible: true
+  - id: "565"
+    name: Headstone 1 Copy
+    type: CustomModel
+    visible: true
+    children:
+      - id: "568"
+        name: Extrude.1
+        type: CustomModel
+        visible: true
+  - id: "571"
+    name: Grass
+    type: TonicNorth.Bottango.Articulation.StructureCube
+    visible: false
+  - id: "574"
+    name: Grass Copy
+    type: TonicNorth.Bottango.Articulation.StructureCube
+    visible: false
+  - id: "577"
+    name: Grass Copy2
+    type: TonicNorth.Bottango.Articulation.StructureCube
+    visible: false
+  - id: "580"
+    name: Grass Copy3
+    type: TonicNorth.Bottango.Articulation.StructureCube
+    visible: false
+  - id: "583"
+    name: fog
+    type: CurvedEventCaster
+    visible: true
+    effectorId: "583"
+  - id: "587"
+    name: fogRGB
+    type: ColorEventCaster
+    visible: true
+    effectorId: "587"
+  - id: "591"
+    name: uvSideA
+    type: CurvedEventCaster
+    visible: true
+    effectorId: "591"
+  - id: "595"
+    name: uvSideB
+    type: CurvedEventCaster
+    visible: true
+    effectorId: "595"
+  - id: "599"
+    name: uvMain
+    type: CurvedEventCaster
+    visible: true
+    effectorId: "599"
+  - id: "603"
+    name: uvToxic
+    type: CurvedEventCaster
+    visible: true
+    effectorId: "603"
+rules:
+  - kind: bursts
+    track: fog
+    above: 0.005
+    maxMs: 5000
+    minGapMs: 30000
+    note: "Mirrors the node's FogGuard: a burst is cut at 5 s, and one starting within 30 s of the last one ending is dropped (the fogger reheats for 30-40 s; pumping sooner sprays liquid). above 0.005 = pump level 1 of 115."
+  - kind: telegraph
+    track: fogRGB
+    before: fog
+    leadMs: 2000
+    note: "Telegraph rule (payoff, not ambush): swell the fogger's light from toxic green to hot white-green in the 2 s before fog fires."
