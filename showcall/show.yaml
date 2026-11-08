@@ -447,22 +447,81 @@ parts:
             name: Pose Blend
             type: PoseBlend
             visible: true
+            blend:
+              dimensions: 2
+              points:
+                - pose: "64"
+                  x: 1
+                  y: 1
+                - pose: "81"
+                  x: 0
+                  y: 1
+                - pose: "95"
+                  x: 0
+                  y: 0
+                - pose: "109"
+                  x: 1
+                  y: 0
           - id: "64"
             name: Upper right
             type: TargetPose
             visible: true
+            pose:
+              - id: "68"
+                movement: 0.4
+              - id: "71"
+                movement: 0.6
+              - id: "74"
+                movement: 0.352899045
+              - id: "55"
+                movement: 0.5
+              - id: "49"
+                movement: 0
           - id: "81"
             name: upper left
             type: TargetPose
             visible: true
+            pose:
+              - id: "68"
+                movement: 0.6
+              - id: "71"
+                movement: 0.354910254
+              - id: "74"
+                movement: 0.404825062
+              - id: "49"
+                movement: 1
+              - id: "55"
+                movement: 1
           - id: "95"
             name: lower left
             type: TargetPose
             visible: true
+            pose:
+              - id: "68"
+                movement: 0.6032476
+              - id: "71"
+                movement: 0.35
+              - id: "74"
+                movement: 0.704035759
+              - id: "49"
+                movement: 0.5
+              - id: "55"
+                movement: 0
           - id: "109"
             name: lower right
             type: TargetPose
             visible: true
+            pose:
+              - id: "74"
+                movement: 0.704850852
+              - id: "71"
+                movement: 0.6
+              - id: "68"
+                movement: 0.35
+              - id: "55"
+                movement: 0.5
+              - id: "49"
+                movement: 1
           - id: "132"
             name: skeleton_upper_spine
             type: CustomModel
